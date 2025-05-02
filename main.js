@@ -2,6 +2,9 @@ import * as THREE from 'three';
 import { FirstPersonController } from './FirstPersonController.js';
 import { ChunkManager } from './ChunkManager.js';
 import { checkCoinCollection } from './coins.js';
+import { inject } from '@vercel/analytics';
+
+inject(); // Start analytics
 
 let scene, camera, renderer, clock;
 let controller, chunkManager, raycaster;
