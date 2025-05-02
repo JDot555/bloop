@@ -4,7 +4,7 @@ import { ChunkManager } from './ChunkManager.js';
 import { checkCoinCollection } from './coins.js';
 import { inject } from '@vercel/analytics';
 
-inject(); // Start analytics
+inject({ debug: true });
 
 let scene, camera, renderer, clock;
 let controller, chunkManager, raycaster;
